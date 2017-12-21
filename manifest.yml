@@ -1,6 +1,5 @@
 applications:
 - name: rate-pcf
-  buildpack: https://github.com/cloudfoundry/java-buildpack.git
   disk_quota: 1G
   env:
     SPRING_PROFILES_ACTIVE: dev
