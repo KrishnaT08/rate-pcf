@@ -1,0 +1,26 @@
+[
+    {
+        "_class": "com.samples.rate.domain.Rate",
+        "originPostalCode": "75038",
+        "destinationPostalCode": "75030",
+        "packageType": "FedEx Small BOx",
+        "serviceType": "FedEx First Overnight",
+        "rate":"135.22"
+    },
+     {
+        "_class": "com.samples.rate.domain.Rate",
+        "originPostalCode": "75012",
+        "destinationPostalCode": "75049",
+        "packageType": "FedEx Large BOx",
+        "serviceType": "FedEx Priority Overnight",
+        "rate":"102.83"
+    },
+     {
+        "_class": "com.samples.rate.domain.Rate",
+        "originPostalCode": "70011",
+        "destinationPostalCode": "70035",
+        "packageType": "FedEx Small BOx",
+        "serviceType": "FedEx 2Day",
+        "rate":"53.35"
+    }
+]

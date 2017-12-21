@@ -1,0 +1,21 @@
+applications:
+- name: rate-pcf
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  disk_quota: 1G
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+    test: test
+  instances: 1
+  memory: 1G
+  routes:
+  - route: rate.cfapps.io
+  - route: arate.cfapps.io
+  - route: brate.cfapps.io
+  services:
+  - config-server
+  - service-registry
+  - circuit-breaker-dashboard
+  - my-cleardb
+  - my-logs
+  - autoscale-development
+  stack: cflinuxfs2
